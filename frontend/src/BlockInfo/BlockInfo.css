@@ -1,0 +1,34 @@
+
+.block-info
+{
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    width: 90%;
+    height: 100vh;
+    gap: 40px;
+}
+
+.background-description
+{
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    background-color: #FEFEFE;
+    width: 50%;
+    height: 90vh;
+}
+
+.image-object
+{
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    background-image: url('../images/lamps.jpg');
+    background-size: cover;
+    width: 50%;
+    height: 90vh;
+}

@@ -34,18 +34,8 @@ html, body {
     width: 100%;
     height: 100%;
     flex-direction: column;
-
-
-
 }
-.name-website
-{
-    font-family: 'Segoe UI';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 48px;
-    color: #000000;
-}
+
 
 .app-content h1 {
   color: #333;
@@ -65,88 +55,5 @@ html, body {
     margin: 0;
 }
 
-.navigation-block
-{
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 90%;
-    height: 100%;
-    flex-direction: row;
-}
 
-.background-info
-{
-    position: relative;
-    align-items: center;
-    justify-content: center;
-    background-image: url('../images/blue-wall.jpg');
-    display: flex;
-    background-size: cover;
-    width: 100%;
-    height: 100vh;
-}
 
-.button-navigation
-{
-    position: relative;
-    align-items: center;
-    justify-content: center;
-    width: 228px;
-    height: 49px;
-    max-width: 298px;
-    max-height: 49px;
-    background: #193140;
-    border-radius: 33px;
-    cursor: pointer;
-    outline: none;
-    border: none;
-}
-.button-navigation:hover
-{
-    background: #234B65;
-}
-.button-text
-{
-    font-family: 'Segoe UI';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 24px;
-    color: white;
-    white-space: nowrap;
-}
-
-.block-info
-{
-    position: relative;
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    width: 90%;
-    height: 100vh;
-    gap: 40px;
-}
-
-.background-description
-{
-    position: relative;
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    background-color: #FEFEFE;
-    width: 50%;
-    height: 90vh;
-}
-
-.image-object
-{
-    position: relative;
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    background-image: url('../images/lamps.jpg');
-    background-size: cover;
-    width: 50%;
-    height: 90vh;
-}

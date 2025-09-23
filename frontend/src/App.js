@@ -1,23 +1,17 @@
 import React from 'react';
 import './styles/index.css';
+import Header from './components/Header/Header';
+import SectionInfoWebSite from './components/SectionInfoWebSite/SectionInfoWebSite';
+import BlockInfo from "./BlockInfo/BlockInfo";
 
 function App() {
     return (
         <div className="app-content">
-            <div className="black-stripe"></div>
-            <nav className="navigation-block">
-                <h1 className="name-website">Aesthetic Furniture</h1>
-                <button className="button-navigation" aria-label="Create project">
-                    <span className="button-text">Create project</span>
-                </button>
-            </nav>
-            <section className="background-info"></section>
-            <section className="block-info">
-                <section className="background-description">
 
-                </section>
-                <div className="image-object"></div>
-            </section>
+            <Header />
+            <SectionInfoWebSite />
+            <BlockInfo />
+
         </div>
     );
 }
