@@ -6,7 +6,7 @@ function SectionInfoWebSite() {
 
     return (
         <section className="background-info">
-
+            <span className="welcome-headline">Эстетичная мебель</span>
         </section>
     );
 }
