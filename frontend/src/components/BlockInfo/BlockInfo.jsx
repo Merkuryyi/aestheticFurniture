@@ -19,6 +19,4 @@ function BlockInfo({ title, description, buttonText, imageSrc, reverse }) {
     </section>
   );
 }
-
-
 export default BlockInfo;

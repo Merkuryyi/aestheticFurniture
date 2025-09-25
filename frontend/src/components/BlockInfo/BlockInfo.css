@@ -33,11 +33,11 @@
     align-items: center;
     justify-content: center;
     display: flex;
-    background-image: url('../../images/lamps.jpg');
     background-size: cover;
     width: 50%;
     height: 90vh;
     min-width: 300px;
+    background-image: var(--bg-image);
 
 }
 
