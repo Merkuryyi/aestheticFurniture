@@ -13,7 +13,7 @@
 }
 .welcome-headline
 {
-    width: 1050px;
+    width: 950px;
     font-family: 'Segoe UI';
     font-style: normal;
     font-weight: 500;
@@ -22,3 +22,4 @@
     text-align: center;
     margin-top: 200px;
 }
+

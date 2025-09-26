@@ -1,0 +1,11 @@
+.about-company {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 30vh;
+    background-color: #FEFEFE;
+    border-radius: 35px 35px 0 0;
+    flex-direction: row;
+}
