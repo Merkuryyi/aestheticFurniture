@@ -1,0 +1,65 @@
+@import '../styles/variables';
+@import '../styles/mixins';
+$display: flex;
+
+$border-radius: 35px;
+$section-width: 80%;
+$gap-large: 45px;
+
+$font-weight-light: 300;
+
+@mixin text-style($size: $font-size-md, $weight: $font-weight-light, $color: $primary-color) {
+    font-family: $font-family;
+    font-style: normal;
+    font-weight: $weight;
+    font-size: $size;
+    color: $color;
+    text-align: start;
+}
+
+@mixin hover-underline($color: $primary-color) {
+    transition: all 0.3s ease;
+    &:hover {
+        text-decoration: underline;
+        text-decoration-color: $color;
+    }
+}
+
+.about-company {
+    width: 100%;
+    min-height: 30vh;
+    background-color: $background-color;
+    border-radius: $border-radius $border-radius 0 0;
+    @include flex-layout(row, center, center);
+
+    &-section {
+        @include flex-layout(row, start, space-between);
+        width: $section-width;
+        height: 80%;
+        background-color: $background-color;
+        border-radius: $border-radius $border-radius 0 0;
+        gap: $gap-large;
+    }
+}
+
+.name-website {
+    @include text-style($font-size-xl, $font-weight-light);
+}
+
+.block-text-about-company {
+    @include flex-layout(column, start, start);
+}
+
+.title-about-company {
+    @include text-style($font-size-lg, $font-weight-light);
+}
+
+.text-about-company {
+    @include text-style($font-size-md, $font-weight-light);
+    @include hover-underline();
+    margin-bottom: 5px;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}

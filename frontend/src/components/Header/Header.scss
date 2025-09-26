@@ -1,0 +1,41 @@
+.header {
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.navigation-block
+{
+    position: relative;
+    display: flex;
+    align-items: center;
+
+    justify-content: space-between;
+    width: 90%;
+    height: 100%;
+    flex-direction: row;
+}
+
+.name-website
+{
+    font-family: 'Segoe UI';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    color: #000000;
+}
+
+@media (max-width: 768px) {
+    .navigation-block {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+
+    .name-website {
+        font-size: 36px;
+    }
+}

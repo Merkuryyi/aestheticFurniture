@@ -1,6 +1,5 @@
 import React from 'react';
-
-import './SectionInfoWebSite.css';
+import './SectionInfoWebSite.scss';
 
 function SectionInfoWebSite({title, imageSrc}) {
 

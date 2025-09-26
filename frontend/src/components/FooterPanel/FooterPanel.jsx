@@ -1,6 +1,6 @@
 import React from 'react';
 
-import './FooterPanel.css';
+import './FooterPanel.scss';
 
 function FooterPanel() {
 
@@ -24,7 +24,6 @@ function FooterPanel() {
 
     );
 }
-
 export default FooterPanel;
 
 export const Telegram = (props) => (

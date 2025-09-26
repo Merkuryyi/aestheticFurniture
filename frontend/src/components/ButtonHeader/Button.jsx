@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './Button.css';
+import './Button.scss';
 
 function Button({ children, onClick, variant = 'primary' }) {
     const [isHovered, setIsHovered] = useState(false);

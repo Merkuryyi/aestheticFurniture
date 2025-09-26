@@ -1,6 +1,6 @@
 import React from 'react';
 import Button from '../ButtonHeader/Button';
-import './Header.css';
+import './Header.scss';
 
 function Header() {
     const handleCreateProject = () => {

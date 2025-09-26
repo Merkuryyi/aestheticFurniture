@@ -1,0 +1,28 @@
+
+@import '../styles/variables';
+@import '../styles/mixins';
+
+
+
+.background-info
+{
+    @include flex-layout(row, start, center);
+    background-image: var(--bg-image);
+    background-size: cover;
+    min-width: 100%;
+    height: 100vh;
+
+}
+.welcome-headline
+{
+    width: 950px;
+    font-family: $font-family;
+    font-style: normal;
+    font-weight: 500;
+    font-size: $font-size-title;
+    color: white;
+    text-align: center;
+    margin-top: 200px;
+
+}
+

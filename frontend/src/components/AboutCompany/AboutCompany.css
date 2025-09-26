@@ -1,11 +1,71 @@
 .about-company {
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    min-height: 30vh;
-    background-color: #FEFEFE;
-    border-radius: 35px 35px 0 0;
-    flex-direction: row;
+  width: 100%;
+  min-height: 30vh;
+  background-color: #FEFEFE;
+  border-radius: 35px 35px 0 0;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
 }
+.about-company-section {
+  position: relative;
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  flex-direction: row;
+  width: 80%;
+  height: 80%;
+  background-color: #FEFEFE;
+  border-radius: 35px 35px 0 0;
+  gap: 45px;
+}
+
+.name-website {
+  font-family: "Segoe UI", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 48px;
+  color: #193140;
+  text-align: start;
+}
+
+.block-text-about-company {
+  position: relative;
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  flex-direction: column;
+}
+
+.title-about-company {
+  font-family: "Segoe UI", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  color: #193140;
+  text-align: start;
+}
+
+.text-about-company {
+  font-family: "Segoe UI", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  color: #193140;
+  text-align: start;
+  transition: all 0.3s ease;
+}
+.text-about-company:hover {
+  text-decoration: underline;
+  text-decoration-color: #193140;
+}
+.text-about-company {
+  margin-bottom: 5px;
+}
+.text-about-company:last-child {
+  margin-bottom: 0;
+}
+
+/*# sourceMappingURL=AboutCompany.css.map */

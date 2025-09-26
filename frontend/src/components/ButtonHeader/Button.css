@@ -1,29 +1,29 @@
+.button-navigation {
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  width: 228px;
+  height: 49px;
+  max-width: 298px;
+  max-height: 49px;
+  background: #193140;
+  border-radius: 33px;
+  cursor: pointer;
+  outline: none;
+  border: none;
+}
 
-.button-navigation
-{
-    position: relative;
-    align-items: center;
-    justify-content: center;
-    width: 228px;
-    height: 49px;
-    max-width: 298px;
-    max-height: 49px;
-    background: #193140;
-    border-radius: 33px;
-    cursor: pointer;
-    outline: none;
-    border: none;
+.button-navigation:hover {
+  background: #234B65;
 }
-.button-navigation:hover
-{
-    background: #234B65;
+
+.button-text {
+  font-family: "Segoe UI";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  color: white;
+  white-space: nowrap;
 }
-.button-text
-{
-    font-family: 'Segoe UI';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 24px;
-    color: white;
-    white-space: nowrap;
-}
+
+/*# sourceMappingURL=Button.css.map */

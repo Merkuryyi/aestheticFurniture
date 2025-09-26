@@ -1,5 +1,5 @@
 import React from 'react';
-import './BlockInfo.css';
+import './BlockInfo.scss';
 import Button from '../ButtonHeader/Button';
 
 function BlockInfo({ title, description, buttonText, imageSrc, reverse }) {
