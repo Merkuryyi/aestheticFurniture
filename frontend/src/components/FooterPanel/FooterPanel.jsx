@@ -18,7 +18,6 @@ function FooterPanel() {
                     <WhatsappFill width="24" height="24" style={{ fill: '#193140' }} />
                 </div>
 
-
             </div>
         </section>
 

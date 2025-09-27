@@ -1,81 +1,62 @@
+@import '../styles/variables';
+@import '../styles/mixins';
 
-.block-info
-{
-    position: relative;
-    align-items: center;
-    justify-content: center;
-    display: flex;
+.block-info {
+    @include flex-layout(row, center, center);
     width: 90%;
-    height: 90vh;
     gap: 40px;
     margin-bottom: 40px;
+    min-width: 700px;
+}
 
-}
 .block-info.reverse {
-  flex-direction: row-reverse;
+    flex-direction: row-reverse;
 }
-.background-description
-{
-    position: relative;
-    align-items: center;
-    justify-content: center;
-    display: flex;
+
+.background-description {
+    @include flex-layout(column, center, center);
     background-color: #FEFEFE;
     width: 50%;
+    min-height: auto;
     height: 90vh;
-    flex-direction: column;
     min-width: 300px;
 }
 
-.image-object
-{
-    position: relative;
-    align-items: center;
-    justify-content: center;
-    display: flex;
+.image-object {
+    @include flex-layout(column, center, center);
     background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     width: 50%;
+    min-height: auto;
     height: 90vh;
-    min-width: 300px;
+    min-width: 800px;
     background-image: var(--bg-image);
-
 }
 
-.blockText
-{
-    position: relative;
-    align-items: center;
-    justify-content: center;
-    display: flex;
+.blockText {
+    @include flex-layout(column, center, center);
     width: 80%;
     height: 80%;
-    flex-direction: column;
     gap: 20px;
 }
-.title-infoBlock
-{
-    font-family: 'Segoe UI';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 48px;
-    color: #193140;
-    text-align: center;
+
+.title-infoBlock {
+    @include text(500, $font-size-xl, $primary-color);
 }
-.text-infoBlock
-{
-    font-family: 'Segoe UI';
-    font-style: normal;
-    font-weight: 300;
-    font-size: 32px;
-    color: #193140;
-    text-align: justify;
+
+.text-infoBlock {
+    @include text(300, $font-size-l, $primary-color, justify);
 }
-@media (max-width: 768px) {
+
+
+@media (max-width: 800px) {
 
     .block-info
     {
         gap: 20px;
         margin-bottom: 20px;
+         flex-wrap: wrap;
     }
     .block-info.reverse {
       flex-direction: row-reverse;
@@ -83,11 +64,13 @@
     .background-description
     {
         min-width: 100px;
+        height: 50vh;
     }
 
     .image-object
     {
         min-width: 100px;
+        height: 50vh;
     }
 
     .blockText

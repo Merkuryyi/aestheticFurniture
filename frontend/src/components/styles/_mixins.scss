@@ -1,7 +1,57 @@
+
+
 @mixin flex-layout( $direction: row, $align: center, $justify: center) {
     position: relative;
     display: flex;
     align-items: $align;
     justify-content: $justify;
     flex-direction: $direction;
+}
+
+@mixin text($font-weight: 500, $font-size: 32, $color: white, $text-align: center) {
+    font-family: 'Segoe UI', sans-serif;
+    font-style: normal;
+    font-weight: $font-weight;
+    font-size: $font-size;
+    color: $color;
+    text-align: $text-align;
+}
+
+
+@mixin button($with: 20px, $height: 20px,  $color: white, $border-radius: 1px) {
+    background: $color;
+    width: $with;
+    height: $height;
+    border-radius: $border-radius;
+    cursor: pointer;
+    &:hover
+    {
+        background: lighten($color, 15%);
+    }
+
+}
+
+
+@mixin icon()
+{
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    &:hover
+    {
+        transform: translateY(-4px);
+    }
+}
+
+@mixin background($with: 20px, $height: 20px,  $color: none) {
+    color: $color;
+    width: $with;
+    height: $height;
+
+}
+
+@mixin mobile($with: 20px, $height: 20px,  $color: none) {
+    color: $color;
+    width: $with;
+    height: $height;
+
 }

@@ -12,17 +12,18 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-direction: row;
   width: 90%;
   height: 100%;
-  flex-direction: row;
 }
 
 .name-website {
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 48px;
-  color: #000000;
+  color: #193140;
+  text-align: center;
 }
 
 @media (max-width: 768px) {

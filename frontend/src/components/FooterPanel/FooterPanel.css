@@ -3,6 +3,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: row;
   width: 100%;
   min-height: 8vh;
   background-color: #FEFEFE;
@@ -10,16 +11,20 @@
 }
 
 .footer-content {
+  position: relative;
   display: flex;
-  align-items: flex-start;
+  align-items: start;
   justify-content: space-between;
+  flex-direction: row;
   width: 90%;
 }
 
 .footer-section {
+  position: relative;
   display: flex;
-  flex-direction: row;
   align-items: center;
+  justify-content: center;
+  flex-direction: row;
   gap: 12px;
 }
 
@@ -33,19 +38,19 @@
 
 .footer-description {
   font-family: "Segoe UI", sans-serif;
+  font-style: normal;
   font-weight: 500;
   font-size: 12px;
   color: #B4B6B5;
+  text-align: center;
   line-height: 1.5;
   max-width: 300px;
-  margin: 0;
 }
 
 .icon-footer {
   cursor: pointer;
   transition: transform 0.3s ease;
 }
-
 .icon-footer:hover {
   transform: translateY(-4px);
 }

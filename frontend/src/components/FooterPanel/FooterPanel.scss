@@ -1,8 +1,8 @@
+@import '../styles/variables';
+@import '../styles/mixins';
+
 .footer {
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include flex-layout(row, center, center);
     width: 100%;
     min-height: 8vh;
     background-color: #FEFEFE;
@@ -10,18 +10,12 @@
 }
 
 .footer-content {
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
+    @include flex-layout(row, start, space-between);
     width: 90%;
-
-
 }
 
 .footer-section {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+    @include flex-layout(row, center, center);
     gap: 12px;
 }
 
@@ -34,21 +28,12 @@
 }
 
 .footer-description {
-    font-family: 'Segoe UI', sans-serif;
-    font-weight: 500;
-    font-size: 12px;
-    color: #B4B6B5;
+   @include text(500, $font-size-mini, #B4B6B5);
     line-height: 1.5;
     max-width: 300px;
-    margin: 0;
 }
 
 .icon-footer
 {
-    cursor: pointer;
-    transition: transform 0.3s ease;
-}
-
-.icon-footer:hover {
-    transform: translateY(-4px);
+    @include icon()
 }

@@ -1,29 +1,31 @@
 
+@import '../styles/mixins';
+@import '../styles/variables';
+
 .button-navigation
 {
-    position: relative;
-    align-items: center;
-    justify-content: center;
-    width: 228px;
-    height: 49px;
+    @include flex-layout(row, center, center);
+    @include button(228px, 49px, $primary-color, 33px);
     max-width: 298px;
     max-height: 49px;
-    background: #193140;
-    border-radius: 33px;
-    cursor: pointer;
     outline: none;
     border: none;
 }
-.button-navigation:hover
-{
-    background: #234B65;
-}
+
 .button-text
 {
-    font-family: 'Segoe UI';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 24px;
-    color: white;
+    @include text(500, $font-size-text, white);
     white-space: nowrap;
+}
+
+@media (max-width: 768px) {
+
+    .button-navigation {
+        @include button(100px, 23px, $primary-color, 16px);
+    }
+    .button-text
+    {
+        @include text(500, $font-size-text/2, white);
+        white-space: nowrap;
+    }
 }

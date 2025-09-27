@@ -1,29 +1,55 @@
 .button-navigation {
   position: relative;
+  display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: row;
+  background: #193140;
   width: 228px;
   height: 49px;
-  max-width: 298px;
-  max-height: 49px;
-  background: #193140;
   border-radius: 33px;
   cursor: pointer;
+}
+.button-navigation:hover {
+  background: rgb(46.4887640449, 91.1179775281, 119.0112359551);
+}
+.button-navigation {
+  max-width: 298px;
+  max-height: 49px;
   outline: none;
   border: none;
 }
 
-.button-navigation:hover {
-  background: #234B65;
-}
-
 .button-text {
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 24px;
   color: white;
+  text-align: center;
   white-space: nowrap;
+}
+
+@media (max-width: 768px) {
+  .button-navigation {
+    background: #193140;
+    width: 100px;
+    height: 23px;
+    border-radius: 16px;
+    cursor: pointer;
+  }
+  .button-navigation:hover {
+    background: rgb(46.4887640449, 91.1179775281, 119.0112359551);
+  }
+  .button-text {
+    font-family: "Segoe UI", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    color: white;
+    text-align: center;
+    white-space: nowrap;
+  }
 }
 
 /*# sourceMappingURL=Button.css.map */

@@ -6,18 +6,19 @@
   flex-direction: row;
   background-image: var(--bg-image);
   background-size: cover;
-  min-width: 100%;
+  color: none;
+  width: 100%;
   height: 100vh;
 }
 
 .welcome-headline {
-  width: 950px;
   font-family: "Segoe UI", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 52px;
   color: white;
   text-align: center;
+  width: 950px;
   margin-top: 200px;
 }
 
