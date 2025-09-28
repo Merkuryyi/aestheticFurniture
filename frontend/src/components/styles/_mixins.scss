@@ -31,7 +31,22 @@
 
 }
 
+@mixin text-style($size: $font-size-md, $weight: $font-weight-light, $color: $primary-color) {
+    font-family: $font-family;
+    font-style: normal;
+    font-weight: $weight;
+    font-size: $size;
+    color: $color;
+    text-align: start;
+}
 
+@mixin hover-underline($color: $primary-color) {
+    transition: all 0.3s ease;
+    &:hover {
+        text-decoration: underline;
+        text-decoration-color: $color;
+    }
+}
 @mixin icon()
 {
     cursor: pointer;

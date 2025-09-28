@@ -6,7 +6,7 @@
     width: 100%;
     min-height: 8vh;
     background-color: #FEFEFE;
-    border-radius: 35px 35px 0 0;
+
 }
 
 .footer-content {
@@ -36,4 +36,12 @@
 .icon-footer
 {
     @include icon()
+}
+
+@media (max-width: 768px) {
+
+}
+
+@media (max-width: 468px) {
+
 }

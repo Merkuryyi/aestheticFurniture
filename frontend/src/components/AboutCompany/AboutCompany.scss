@@ -1,65 +1,117 @@
 @import '../styles/variables';
 @import '../styles/mixins';
-$display: flex;
 
-$border-radius: 35px;
+$display: flex;
 $section-width: 80%;
 $gap-large: 45px;
-
 $font-weight-light: 300;
-
-@mixin text-style($size: $font-size-md, $weight: $font-weight-light, $color: $primary-color) {
-    font-family: $font-family;
-    font-style: normal;
-    font-weight: $weight;
-    font-size: $size;
-    color: $color;
-    text-align: start;
-}
-
-@mixin hover-underline($color: $primary-color) {
-    transition: all 0.3s ease;
-    &:hover {
-        text-decoration: underline;
-        text-decoration-color: $color;
-    }
-}
-
+$gap-mini: 5px;
 .about-company {
     width: 100%;
     min-height: 30vh;
     background-color: $background-color;
-    border-radius: $border-radius $border-radius 0 0;
+    white-space: nowrap;
+
     @include flex-layout(row, center, center);
 
-    &-section {
+    &__section {
         @include flex-layout(row, start, space-between);
-        width: $section-width;
+        width: 80%;
         height: 80%;
         background-color: $background-color;
-        border-radius: $border-radius $border-radius 0 0;
         gap: $gap-large;
+    }
+
+    &__brand {
+        @include text-style($font-size-xl, $font-weight-light);
+    }
+
+    &__links-block {
+        @include flex-layout(column, start, start);
+        gap: $gap-mini;
+    }
+
+    &__contacts-block {
+        @include flex-layout(column, start, start);
+        gap: $gap-mini;
+    }
+
+    &__title {
+        @include text-style($font-size-lg, $font-weight-light);
+
+        &:last-child {
+            margin-bottom: 10px;
+        }
+    }
+
+    &__link {
+        @include text-style($font-size-md, $font-weight-light);
+        @include hover-underline();
+
+        cursor: pointer;
+        &:last-child {
+            margin-bottom: 10px;
+        }
+    }
+
+    &__contact {
+        @include text-style($font-size-md, $font-weight-light);
+        margin-bottom: 5px;
+
+        &:last-child {
+            margin-bottom: 10px;
+        }
     }
 }
 
-.name-website {
-    @include text-style($font-size-xl, $font-weight-light);
+@media (max-width: 768px) {
+    .about-company {
+        min-height: 10vh;
+        @include flex-layout(column, center, center);
+
+        &__section {
+            @include flex-layout(column, start, space-between);
+                background-color: $background-color;
+
+                gap: $gap-mini;
+            }
+
+            &__brand {
+                @include text-style($font-size-xl/1.6, $font-weight-light);
+                margin-bottom: 7px;
+
+            }
+
+
+            &__title {
+                @include text-style($font-size-lg/1.6, $font-weight-light);
+
+            }
+
+            &__link {
+                @include text-style($font-size-md/1.6, $font-weight-light);
+                &:last-child {
+                    margin-bottom: 7px;
+                }
+
+
+            }
+
+            &__contact {
+                @include text-style($font-size-md/1.6, $font-weight-light);
+                &:last-child {
+                    margin-bottom: 7px;
+                }
+
+        }
+    }
 }
 
-.block-text-about-company {
-    @include flex-layout(column, start, start);
-}
+@media (max-width: 468px) {
+    .about-company {
+        min-height: 10vh;
+        @include flex-layout(column, center, center);
 
-.title-about-company {
-    @include text-style($font-size-lg, $font-weight-light);
-}
 
-.text-about-company {
-    @include text-style($font-size-md, $font-weight-light);
-    @include hover-underline();
-    margin-bottom: 5px;
-
-    &:last-child {
-        margin-bottom: 0;
     }
 }

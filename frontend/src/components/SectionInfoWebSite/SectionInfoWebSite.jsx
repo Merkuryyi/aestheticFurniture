@@ -2,13 +2,11 @@ import React from 'react';
 import './SectionInfoWebSite.scss';
 
 function SectionInfoWebSite({title, imageSrc}) {
-
     return (
-        <div className="background-info"
+        <div className="section-info"
           style={{ '--bg-image': `url(${imageSrc})` }} >
-          <span className="welcome-headline">{title}</span>
+          <span className="section-info__headline">{title}</span>
         </div>
-
     );
 }
 

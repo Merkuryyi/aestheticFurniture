@@ -6,12 +6,12 @@ function Button({ children, onClick, variant = 'primary' }) {
 
     return (
         <button
-            className={`button-navigation button-navigation-${variant} ${isHovered ? 'hovered' : ''}`}
+            className={`button ${isHovered ? 'hovered' : ''}`}
             onClick={onClick}
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}
         >
-            <span className="button-text">{children}</span>
+            <span className="button__text">{children}</span>
         </button>
     );
 }

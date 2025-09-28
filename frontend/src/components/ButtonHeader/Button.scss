@@ -1,9 +1,7 @@
-
 @import '../styles/mixins';
 @import '../styles/variables';
 
-.button-navigation
-{
+.button {
     @include flex-layout(row, center, center);
     @include button(228px, 49px, $primary-color, 33px);
     max-width: 298px;
@@ -12,19 +10,26 @@
     border: none;
 }
 
-.button-text
-{
+.button__text {
     @include text(500, $font-size-text, white);
     white-space: nowrap;
 }
 
 @media (max-width: 768px) {
+    .button {
+        @include button(139px, 30px, $primary-color, 16px);
+    }
+    .button__text {
+        @include text(500, $font-size-text/1.6, white);
+        white-space: nowrap;
+    }
+}
 
-    .button-navigation {
+@media (max-width: 468px) {
+    .button {
         @include button(100px, 23px, $primary-color, 16px);
     }
-    .button-text
-    {
+    .button__text {
         @include text(500, $font-size-text/2, white);
         white-space: nowrap;
     }

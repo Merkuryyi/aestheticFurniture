@@ -1,4 +1,4 @@
-.background-info {
+.section-info {
   position: relative;
   display: flex;
   align-items: start;
@@ -10,8 +10,7 @@
   width: 100%;
   height: 100vh;
 }
-
-.welcome-headline {
+.section-info__headline {
   font-family: "Segoe UI", sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -20,6 +19,43 @@
   text-align: center;
   width: 950px;
   margin-top: 200px;
+}
+
+@media (max-width: 768px) {
+  .section-info {
+    background-size: cover;
+    color: none;
+    width: 100%;
+    height: 100vh;
+  }
+  .section-info__headline {
+    font-family: "Segoe UI", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32.5px;
+    color: white;
+    text-align: center;
+    width: 950px;
+    margin-top: 200px;
+  }
+}
+@media (max-width: 468px) {
+  .section-info {
+    background-size: cover;
+    color: none;
+    width: 100%;
+    height: 100vh;
+  }
+  .section-info__headline {
+    font-family: "Segoe UI", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 26px;
+    color: white;
+    text-align: center;
+    width: 950px;
+    margin-top: 200px;
+  }
 }
 
 /*# sourceMappingURL=SectionInfoWebSite.css.map */

@@ -9,12 +9,10 @@
   margin-bottom: 40px;
   min-width: 700px;
 }
-
-.block-info.reverse {
+.block-info--reverse {
   flex-direction: row-reverse;
 }
-
-.background-description {
+.block-info__description {
   position: relative;
   display: flex;
   align-items: center;
@@ -22,12 +20,11 @@
   flex-direction: column;
   background-color: #FEFEFE;
   width: 50%;
-  min-height: auto;
   height: 90vh;
-  min-width: 300px;
+  min-width: 50vh;
+  gap: 20px;
 }
-
-.image-object {
+.block-info__image {
   position: relative;
   display: flex;
   align-items: center;
@@ -42,19 +39,16 @@
   min-width: 800px;
   background-image: var(--bg-image);
 }
-
-.blockText {
+.block-info__text {
   position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   width: 80%;
-  height: 80%;
   gap: 20px;
 }
-
-.title-infoBlock {
+.block-info__title {
   font-family: "Segoe UI", sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -62,8 +56,7 @@
   color: #193140;
   text-align: center;
 }
-
-.text-infoBlock {
+.block-info__description-text {
   font-family: "Segoe UI", sans-serif;
   font-style: normal;
   font-weight: 300;
@@ -78,24 +71,24 @@
     margin-bottom: 20px;
     flex-wrap: wrap;
   }
-  .block-info.reverse {
+  .block-info--reverse {
     flex-direction: row-reverse;
   }
-  .background-description {
+  .block-info__description {
     min-width: 100px;
     height: 50vh;
   }
-  .image-object {
+  .block-info__image {
     min-width: 100px;
     height: 50vh;
   }
-  .blockText {
+  .block-info__text {
     gap: 10px;
   }
-  .title-infoBlock {
+  .block-info__title {
     font-size: 12px;
   }
-  .text-infoBlock {
+  .block-info__description-text {
     font-size: 16px;
   }
 }

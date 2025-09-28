@@ -2,14 +2,14 @@
   width: 100%;
   min-height: 30vh;
   background-color: #FEFEFE;
-  border-radius: 35px 35px 0 0;
+  white-space: nowrap;
   position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: row;
 }
-.about-company-section {
+.about-company__section {
   position: relative;
   display: flex;
   align-items: start;
@@ -18,11 +18,9 @@
   width: 80%;
   height: 80%;
   background-color: #FEFEFE;
-  border-radius: 35px 35px 0 0;
   gap: 45px;
 }
-
-.name-website {
+.about-company__brand {
   font-family: "Segoe UI", sans-serif;
   font-style: normal;
   font-weight: 300;
@@ -30,16 +28,23 @@
   color: #193140;
   text-align: start;
 }
-
-.block-text-about-company {
+.about-company__links-block {
   position: relative;
   display: flex;
   align-items: start;
   justify-content: start;
   flex-direction: column;
+  gap: 5px;
 }
-
-.title-about-company {
+.about-company__contacts-block {
+  position: relative;
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  flex-direction: column;
+  gap: 5px;
+}
+.about-company__title {
   font-family: "Segoe UI", sans-serif;
   font-style: normal;
   font-weight: 300;
@@ -47,8 +52,10 @@
   color: #193140;
   text-align: start;
 }
-
-.text-about-company {
+.about-company__title:last-child {
+  margin-bottom: 10px;
+}
+.about-company__link {
   font-family: "Segoe UI", sans-serif;
   font-style: normal;
   font-weight: 300;
@@ -57,15 +64,96 @@
   text-align: start;
   transition: all 0.3s ease;
 }
-.text-about-company:hover {
+.about-company__link:hover {
   text-decoration: underline;
   text-decoration-color: #193140;
 }
-.text-about-company {
+.about-company__link {
+  cursor: pointer;
+}
+.about-company__link:last-child {
+  margin-bottom: 10px;
+}
+.about-company__contact {
+  font-family: "Segoe UI", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  color: #193140;
+  text-align: start;
   margin-bottom: 5px;
 }
-.text-about-company:last-child {
-  margin-bottom: 0;
+.about-company__contact:last-child {
+  margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+  .about-company {
+    min-height: 10vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .about-company__section {
+    position: relative;
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    flex-direction: column;
+    background-color: #FEFEFE;
+    gap: 5px;
+  }
+  .about-company__brand {
+    font-family: "Segoe UI", sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 30px;
+    color: #193140;
+    text-align: start;
+    margin-bottom: 7px;
+  }
+  .about-company__title {
+    font-family: "Segoe UI", sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12.5px;
+    color: #193140;
+    text-align: start;
+  }
+  .about-company__link {
+    font-family: "Segoe UI", sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 11.25px;
+    color: #193140;
+    text-align: start;
+  }
+  .about-company__link:last-child {
+    margin-bottom: 7px;
+  }
+  .about-company__contact {
+    font-family: "Segoe UI", sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 11.25px;
+    color: #193140;
+    text-align: start;
+  }
+  .about-company__contact:last-child {
+    margin-bottom: 7px;
+  }
+}
+@media (max-width: 468px) {
+  .about-company {
+    min-height: 10vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
 }
 
 /*# sourceMappingURL=AboutCompany.css.map */

@@ -1,4 +1,4 @@
-.button-navigation {
+.button {
   position: relative;
   display: flex;
   align-items: center;
@@ -10,17 +10,17 @@
   border-radius: 33px;
   cursor: pointer;
 }
-.button-navigation:hover {
+.button:hover {
   background: rgb(46.4887640449, 91.1179775281, 119.0112359551);
 }
-.button-navigation {
+.button {
   max-width: 298px;
   max-height: 49px;
   outline: none;
   border: none;
 }
 
-.button-text {
+.button__text {
   font-family: "Segoe UI", sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -31,17 +31,38 @@
 }
 
 @media (max-width: 768px) {
-  .button-navigation {
+  .button {
+    background: #193140;
+    width: 139px;
+    height: 30px;
+    border-radius: 16px;
+    cursor: pointer;
+  }
+  .button:hover {
+    background: rgb(46.4887640449, 91.1179775281, 119.0112359551);
+  }
+  .button__text {
+    font-family: "Segoe UI", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    color: white;
+    text-align: center;
+    white-space: nowrap;
+  }
+}
+@media (max-width: 468px) {
+  .button {
     background: #193140;
     width: 100px;
     height: 23px;
     border-radius: 16px;
     cursor: pointer;
   }
-  .button-navigation:hover {
+  .button:hover {
     background: rgb(46.4887640449, 91.1179775281, 119.0112359551);
   }
-  .button-text {
+  .button__text {
     font-family: "Segoe UI", sans-serif;
     font-style: normal;
     font-weight: 500;
