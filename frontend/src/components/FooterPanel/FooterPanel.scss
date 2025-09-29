@@ -2,46 +2,47 @@
 @import '../styles/mixins';
 
 .footer {
-    @include flex-layout(row, center, center);
-    width: 100%;
-    min-height: 8vh;
-    background-color: #FEFEFE;
-
-}
-
-.footer-content {
+  @include flex-layout(row, center, center);
+  width: 100%;
+  min-height: 8vh;
+  background-color: #FEFEFE;
+  &__content {
     @include flex-layout(row, start, space-between);
     width: 90%;
-}
+  }
 
-.footer-section {
+  &__section {
     @include flex-layout(row, center, center);
     gap: 12px;
+  }
+
+  &__title {
+    @include text(600, $font-size-md, $primary-color);
+  }
+
+  &__description {
+    @include text(500, $font-size-mini, #B4B6B5);
+  }
+
+  &__icon {
+    @include icon();
+  }
+}
+  @media (max-width: 768px) {
+  .footer {
+    min-height: 4vh;
+    &__title {
+      @include text(600, $font-size-md/1.6, $primary-color);
+      white-space: nowrap;
+    }
+
+    &__description {
+      opacity: 0;
+    }
+
+    &__icon {
+      @include icon();
+    }
+  }
 }
 
-.footer-title {
-    font-family: 'Segoe UI', sans-serif;
-    font-weight: 600;
-    font-size: 18px;
-    color: #193140;
-    margin: 0;
-}
-
-.footer-description {
-   @include text(500, $font-size-mini, #B4B6B5);
-    line-height: 1.5;
-    max-width: 300px;
-}
-
-.icon-footer
-{
-    @include icon()
-}
-
-@media (max-width: 768px) {
-
-}
-
-@media (max-width: 468px) {
-
-}
