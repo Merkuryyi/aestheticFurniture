@@ -5,8 +5,8 @@
   justify-content: center;
   flex-direction: row;
   background: #193140;
-  width: 228px;
-  height: 49px;
+  width: auto;
+  height: auto;
   border-radius: 33px;
   cursor: pointer;
 }
@@ -14,10 +14,13 @@
   background: rgb(46.4887640449, 91.1179775281, 119.0112359551);
 }
 .button {
+  min-width: auto;
+  min-height: auto;
   max-width: 298px;
-  max-height: 49px;
+  max-height: 53px;
   outline: none;
   border: none;
+  padding: 15px 15px;
 }
 
 .button__text {
@@ -33,13 +36,16 @@
 @media (max-width: 768px) {
   .button {
     background: #193140;
-    width: 139px;
-    height: 30px;
+    width: auto;
+    height: auto;
     border-radius: 16px;
     cursor: pointer;
   }
   .button:hover {
     background: rgb(46.4887640449, 91.1179775281, 119.0112359551);
+  }
+  .button {
+    padding: 7px 11px;
   }
   .button__text {
     font-family: "Segoe UI", sans-serif;
@@ -54,13 +60,16 @@
 @media (max-width: 468px) {
   .button {
     background: #193140;
-    width: 100px;
-    height: 23px;
+    width: auto;
+    height: auto;
     border-radius: 16px;
     cursor: pointer;
   }
   .button:hover {
     background: rgb(46.4887640449, 91.1179775281, 119.0112359551);
+  }
+  .button {
+    padding: 7px 9px;
   }
   .button__text {
     font-family: "Segoe UI", sans-serif;

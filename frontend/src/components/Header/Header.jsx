@@ -16,7 +16,7 @@ function Header() {
                     onClick={handleCreateProject}
                     className="header__button"
                 >
-                    Create project
+                    Оформить проект
                 </Button>
             </nav>
         </header>

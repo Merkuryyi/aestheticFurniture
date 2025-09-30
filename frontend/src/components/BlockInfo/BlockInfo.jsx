@@ -2,7 +2,7 @@ import React from 'react';
 import './BlockInfo.scss';
 import Button from '../ButtonHeader/Button';
 
-function BlockInfo({ title, description, buttonText, imageSrc, reverse }) {
+function BlockInfo({ title, description, imageSrc, reverse }) {
   return (
     <section className={`block-info ${reverse ? 'block-info--reverse' : ''}`}>
       <section className="block-info__description">
@@ -10,7 +10,7 @@ function BlockInfo({ title, description, buttonText, imageSrc, reverse }) {
           <h1 className="block-info__title">{title}</h1>
           <span className="block-info__description-text">{description}</span>
         </div>
-        <Button>{buttonText}</Button>
+
       </section>
       <div
         className="block-info__image"

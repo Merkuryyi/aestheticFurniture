@@ -6,6 +6,7 @@
     background-image: var(--bg-image);
     background-size: cover;
     @include background(100%, 100vh);
+    margin-bottom: 40px;
 
     &__headline {
         @include text(500, $font-size-title, white);

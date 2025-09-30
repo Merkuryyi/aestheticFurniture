@@ -18,7 +18,7 @@
 }
 
 
-@mixin button($with: 20px, $height: 20px,  $color: white, $border-radius: 1px) {
+@mixin button($with: auto, $height: auto,  $color: white, $border-radius: 1px) {
     background: $color;
     width: $with;
     height: $height;
