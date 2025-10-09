@@ -55,7 +55,7 @@ MIDDLEWARE = [
 STATIC_ROOT = BASE_DIR / 'staticfiles'
 ROOT_URLCONF = 'aestheticFurniture.urls'
 STATICFILES_DIRS = [
-    FRONTEND_DIR / 'build' / 'static',  # ← Указываем на React статику
+    FRONTEND_DIR / 'build' / 'static',
 ]
 TEMPLATES = [
     {
