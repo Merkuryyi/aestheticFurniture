@@ -8,3 +8,7 @@ exclude:
   - package.json
   - package-lock.json
   - yarn.lock
+permalink: pretty
+
+baseurl: "/frontend/public"
+url: "https://merkuryyi.github.io"
