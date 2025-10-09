@@ -1,7 +1,6 @@
 exclude:
   - frontend/node_modules/
   - node_modules/
-  - frontend/
   - .git/
   - .gitignore
   - README.md
