@@ -4,12 +4,11 @@ import Header from './components/Header/Header';
 import SectionInfoWebSite from './components/SectionInfoWebSite/SectionInfoWebSite';
 import BlockInfo from "./components/BlockInfo/BlockInfo";
 import FooterPanel from "./components/FooterPanel/FooterPanel";
+import armchairImage from './images/armchair.png';
+import lampImage from './images/lamp.png';
+import backgroundImage from './images/background-block.png';
+import modernBackgroundImage from './images/modern-room.jpeg';
 import AboutCompany from "./components/AboutCompany/AboutCompany";
-
-const armchairImage = "/images/armchair.png";
-const lampImage = "/images/lamp.png";
-const backgroundImage = "/images/background-block.png";
-const modernBackgroundImage = "/images/modern-room.jpeg";
 
 function App() {
     return (
