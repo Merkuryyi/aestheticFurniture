@@ -58,12 +58,10 @@ logs/
 .env
 *.env
 
-# Database
-*.db
-*.sqlite3
-
 # Temporary files
 *.tmp
 *.temp
-frontend/node_modules/
 node_modules/
+manage.py
+db.sqlite3
+frontend/src/
