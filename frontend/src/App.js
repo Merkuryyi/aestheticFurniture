@@ -9,7 +9,7 @@ import lampImage from './images/lamp.png';
 import backgroundImage from './images/background-block.png';
 import modernBackgroundImage from './images/modern-room.jpeg';
 import AboutCompany from "./components/AboutCompany/AboutCompany";
-
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 function App() {
     return (
         <div className="app-content">
