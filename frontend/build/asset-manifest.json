@@ -1,17 +1,13 @@
 {
   "files": {
     "main.css": "/aestheticFurniture/static/css/main.1697adee.css",
-    "main.js": "/aestheticFurniture/static/js/main.8184b30c.js",
-    "static/media/lamp.png": "/aestheticFurniture/static/media/lamp.7a4f724a13296723477f.png",
-    "static/media/armchair.png": "/aestheticFurniture/static/media/armchair.27253eb03d7715acbd38.png",
-    "static/media/background-block.png": "/aestheticFurniture/static/media/background-block.4b9b9a058509630a499d.png",
-    "static/media/modern-room.jpeg": "/aestheticFurniture/static/media/modern-room.e8a61c750fdfcc4d71c2.jpeg",
+    "main.js": "/aestheticFurniture/static/js/main.37ceef2e.js",
     "index.html": "/aestheticFurniture/index.html",
     "main.1697adee.css.map": "/aestheticFurniture/static/css/main.1697adee.css.map",
-    "main.8184b30c.js.map": "/aestheticFurniture/static/js/main.8184b30c.js.map"
+    "main.37ceef2e.js.map": "/aestheticFurniture/static/js/main.37ceef2e.js.map"
   },
   "entrypoints": [
     "static/css/main.1697adee.css",
-    "static/js/main.8184b30c.js"
+    "static/js/main.37ceef2e.js"
   ]
 }
