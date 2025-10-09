@@ -10,5 +10,5 @@ exclude:
   - yarn.lock
 permalink: pretty
 
-baseurl: "/frontend/public"
+baseurl: ""
 url: "https://merkuryyi.github.io"
