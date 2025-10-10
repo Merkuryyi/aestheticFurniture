@@ -15,7 +15,7 @@ function App() {
                 </section>
                 <section className="snap-section" id="section1">
                     <SectionInfoWebSite
-                        imageSrc="/images/background-block.png"
+                        imageSrc={`${process.env.PUBLIC_URL}/images/background-block.png`}
                         title="Эстетичная мебель - минималистичные и трендовые предметы интерьера, которые создадут гармонию и вдохновение в любой комнате."
                     />
                 </section>
@@ -24,7 +24,7 @@ function App() {
                     <BlockInfo
                         title="Современная эстетика для вашего дома"
                         description="Красота, комфорт и стиль в каждой детали. Вдохновляйтесь свежими интерьерными решениями каждый день."
-                        imageSrc="/images/armchair.png"
+                        imageSrc={`${process.env.PUBLIC_URL}/images/armchair.png`}
                         reverse={false}
                     />
                 </section>
@@ -33,14 +33,14 @@ function App() {
                     <BlockInfo
                         title="Идеальная мебель для уютной жизни"
                         description="У нас вы найдете минималистичные и трендовые предметы интерьера, которые создают гармонию и вдохновение в любой комнате."
-                        imageSrc="/images/lamp.png"
+                        imageSrc={`${process.env.PUBLIC_URL}/images/lamp.png`}
                         reverse={true}
                     />
                 </section>
 
                 <section className="snap-section" id="section2">
                     <SectionInfoWebSite
-                        imageSrc="/images/modern-room.jpeg"
+                        imageSrc={`${process.env.PUBLIC_URL}/images/modern-room.jpeg`}
                         title="Соберите уникальный образ комнаты — наши дизайнерские подборки помогут быстро подобрать гармоничные сочетания мебели и аксессуаров."
                     />
                 </section>
