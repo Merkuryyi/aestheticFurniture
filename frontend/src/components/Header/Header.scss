@@ -36,9 +36,9 @@
 @media (max-width: 468px) {
     .header {
         &__block {
-        @include flex-layout(row, center, space-between);
-        padding: 5px;
-    }
+            @include flex-layout(row, center, space-between);
+            padding: 5px;
+        }
         &__brand {
             @include text(400, $font-size-xl/3, $primary-color);
         }

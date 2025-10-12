@@ -23,7 +23,6 @@
     .button {
         @include button(auto, auto, $primary-color, 16px);
         padding: 7px 11px;
-
     }
     .button__text {
         @include text(500, $font-size-text/1.6, white);

@@ -2,7 +2,7 @@
 @import '../styles/mixins';
 
 .section-info {
-    @include flex-layout(row, start, center);
+    @include flex-layout(row, center, center);
     background-image: var(--bg-image);
     background-size: cover;
     @include background(100%, 100vh);
@@ -10,11 +10,9 @@
 
     &__headline {
         @include text(500, $font-size-title, white);
-        width: 950px;
-        margin-top: 200px;
+        width: 60%;
     }
 }
-
 
 @media (max-width: 768px) {
     .section-info {
@@ -23,7 +21,7 @@
 
         &__headline {
             @include text(500, $font-size-title/1.6, white);
-            width: 950px;
+            width: 80%;
             margin-top: 200px;
         }
     }
@@ -36,7 +34,7 @@
 
         &__headline {
             @include text(500, $font-size-title/2, white);
-            width: 950px;
+            width: 80%;
             margin-top: 200px;
         }
     }

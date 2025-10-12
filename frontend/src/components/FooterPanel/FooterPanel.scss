@@ -4,7 +4,8 @@
 .footer {
   @include flex-layout(row, center, center);
   width: 100%;
-  min-height: 8vh;
+  padding: 20px;
+
   background-color: #FEFEFE;
   &__content {
     @include flex-layout(row, start, space-between);
@@ -24,25 +25,25 @@
     @include text(500, $font-size-mini, #B4B6B5);
   }
 
-  &__icon {
-    @include icon();
+   &__icon {
+    @include icon(24px, 24px);
   }
 }
   @media (max-width: 768px) {
   .footer {
-    min-height: 4vh;
+    padding: 10px;
+
     &__title {
       @include text(600, $font-size-md/1.6, $primary-color);
       white-space: nowrap;
     }
-
     &__description {
-      opacity: 0;
+      display: none;
+    }
+      &__icon {
+      @include icon(12px, 12px);
     }
 
-    &__icon {
-      @include icon();
-    }
   }
 }
 

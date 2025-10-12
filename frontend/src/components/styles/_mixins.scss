@@ -1,5 +1,3 @@
-
-
 @mixin flex-layout( $direction: row, $align: center, $justify: center) {
     position: relative;
     display: flex;
@@ -17,7 +15,6 @@
     text-align: $text-align;
 }
 
-
 @mixin button($with: auto, $height: auto,  $color: white, $border-radius: 1px) {
     background: $color;
     width: $with;
@@ -28,7 +25,6 @@
     {
         background: lighten($color, 15%);
     }
-
 }
 
 @mixin text-style($size: $font-size-md, $weight: $font-weight-light, $color: $primary-color) {
@@ -47,26 +43,25 @@
         text-decoration-color: $color;
     }
 }
-@mixin icon()
-{
-    cursor: pointer;
-    transition: transform 0.3s ease;
-    &:hover
-    {
-        transform: translateY(-4px);
-    }
+@mixin icon($width: 24px, $height: 24px) {
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  width: $width;
+  height: $height;
+
+  &:hover {
+    transform: translateY(-4px);
+  }
 }
 
 @mixin background($with: 20px, $height: 20px,  $color: none) {
     color: $color;
     width: $with;
     height: $height;
-
 }
 
 @mixin mobile($with: 20px, $height: 20px,  $color: none) {
     color: $color;
     width: $with;
     height: $height;
-
 }
