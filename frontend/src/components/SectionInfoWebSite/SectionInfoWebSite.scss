@@ -5,12 +5,21 @@
     @include flex-layout(row, center, center);
     background-image: var(--bg-image);
     background-size: cover;
-    @include background(100%, 100vh);
+    width: 100%;
+    height: 100vh;
     margin-bottom: 40px;
+    min-height: auto;
+    min-width: auto;
+    overflow: hidden;
 
     &__headline {
         @include text(500, $font-size-title, white);
         width: 60%;
+        @media (max-height: 850px) {
+            @include text(500, $font-size-title/1.6, white);
+            width: 80%;
+
+        }
     }
 }
 
