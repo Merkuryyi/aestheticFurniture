@@ -31,18 +31,11 @@ $gap-mini: 5px;
     }
     &__title {
         @include text-style($font-size-lg, $font-weight-light);
-
-        &:last-child {
-            margin-bottom: 10px;
-        }
     }
     &__contact {
         @include text-style($font-size-md, $font-weight-light);
         @include hover-underline();
-        margin-bottom: 5px;
-        &:last-child {
-            margin-bottom: 10px;
-        }
+
     }
 }
 
@@ -60,7 +53,6 @@ $gap-mini: 5px;
 
             &__brand {
                 @include text-style($font-size-xl/1.6, $font-weight-light);
-                margin-bottom: 7px;
             }
 
 
@@ -70,9 +62,6 @@ $gap-mini: 5px;
             }
             &__contact {
                 @include text-style($font-size-md/1.6, $font-weight-light);
-                &:last-child {
-                    margin-bottom: 7px;
-                }
 
         }
     }
