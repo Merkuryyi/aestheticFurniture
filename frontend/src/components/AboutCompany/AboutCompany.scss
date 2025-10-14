@@ -1,11 +1,6 @@
 @import '../styles/variables';
 @import '../styles/mixins';
 
-$display: flex;
-$section-width: 80%;
-$gap-large: 45px;
-$font-weight-light: 300;
-$gap-mini: 5px;
 .about-company {
     width: 100%;
     min-height: 30vh;
@@ -35,7 +30,6 @@ $gap-mini: 5px;
     &__contact {
         @include text-style($font-size-md, $font-weight-light);
         @include hover-underline();
-
     }
 }
 
@@ -45,23 +39,22 @@ $gap-mini: 5px;
         @include flex-layout(column, center, center);
 
         &__section {
-            @include flex-layout(column, start, space-between);
-                background-color: $background-color;
+        @include flex-layout(column, start, space-between);
+            background-color: $background-color;
 
-                gap: $gap-mini;
-            }
+            gap: $gap-mini;
+        }
 
-            &__brand {
-                @include text-style($font-size-xl/1.6, $font-weight-light);
-            }
+        &__brand {
+            @include text-style($font-size-xl/1.6, $font-weight-light);
+        }
 
+        &__title {
+            @include text-style($font-size-lg/1.6, $font-weight-light);
 
-            &__title {
-                @include text-style($font-size-lg/1.6, $font-weight-light);
-
-            }
-            &__contact {
-                @include text-style($font-size-md/1.6, $font-weight-light);
+        }
+        &__contact {
+            @include text-style($font-size-md/1.6, $font-weight-light);
 
         }
     }
@@ -71,6 +64,5 @@ $gap-mini: 5px;
     .about-company {
         min-height: 10vh;
         @include flex-layout(column, center, center);
-
     }
 }

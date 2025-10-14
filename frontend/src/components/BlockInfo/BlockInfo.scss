@@ -17,14 +17,13 @@
         flex: 1 1 50%;
         @include flex-layout(column, center, center);
         background-color: #FEFEFE;
-
         min-height: 90vh;
         min-width: auto;
         padding: 20px 0;
     }
 
     &__image {
-         flex: 1 1 50%;
+        flex: 1 1 50%;
         @include flex-layout(column, center, center);
         background-size: cover;
         background-position: center;
@@ -37,7 +36,6 @@
     &__text {
         @include flex-layout(column, center, space-between);
         width: 80%;
-
     }
 
     &__title {
