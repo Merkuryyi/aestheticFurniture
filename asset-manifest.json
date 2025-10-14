@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/aestheticFurniture/static/css/main.f9d3b8d9.css",
-    "main.js": "/aestheticFurniture/static/js/main.7a9e3ff7.js",
+    "main.css": "/aestheticFurniture/static/css/main.6a011364.css",
+    "main.js": "/aestheticFurniture/static/js/main.a31c1d8a.js",
     "index.html": "/aestheticFurniture/index.html",
-    "main.f9d3b8d9.css.map": "/aestheticFurniture/static/css/main.f9d3b8d9.css.map",
-    "main.7a9e3ff7.js.map": "/aestheticFurniture/static/js/main.7a9e3ff7.js.map"
+    "main.6a011364.css.map": "/aestheticFurniture/static/css/main.6a011364.css.map",
+    "main.a31c1d8a.js.map": "/aestheticFurniture/static/js/main.a31c1d8a.js.map"
   },
   "entrypoints": [
-    "static/css/main.f9d3b8d9.css",
-    "static/js/main.7a9e3ff7.js"
+    "static/css/main.6a011364.css",
+    "static/js/main.a31c1d8a.js"
   ]
 }
